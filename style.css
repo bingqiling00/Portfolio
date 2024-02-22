@@ -1,0 +1,159 @@
+*{
+    font-family: 'Poppins';
+    color:rgb(255, 255, 255);
+    font-size:24px;
+}
+
+body{
+    background: #1b1b1b;
+}
+
+nav{
+    background: #1b1b1b;
+}
+.navbar-toggler{
+    border:none !important;
+    /* color:rgb(255, 255, 255) !important; */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover{
+    color:gold;
+}
+.navbar-nav .nav-link{
+    color:white;
+}
+
+/* start hero */
+.hero{
+    padding:250px 0px 250px 0px;
+    position:relative;    
+    justify-content: center;
+    align-items: center;
+}
+.hero #bg_blur{
+    background-image: radial-gradient(ellipse closest-side, rgba(255, 230, 0, 0.7), #1b1b1b);
+    width: 500px;
+    height: 500px;
+    position:absolute;
+    animation: fadeInOpacity 1.5s ease forwards;
+}
+
+@keyframes fadeInOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.1; /* Adjust the final opacity value as needed */
+    }
+}
+
+
+.hero .content{
+    position:relative;
+    z-index :100;
+}
+
+.hero h1 span#left,
+.hero h1 span#right
+{
+    opacity: 25%;
+    
+}
+
+.hero h1 span#cent_text,span#slash,span#left,span#right{
+    font-size:120px;
+}
+
+.hero h1 span#slash{
+    background: linear-gradient(to left,#ffd900, #664b08 );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero p{
+    color:#51a953;    font-style:italic;
+}
+/* end hero */
+/* ------------------------------------------------------------------------------------------------------ */
+/* start about */
+.about{
+    /* background: #292929; */
+    padding:20px 100px 250px 100px;
+
+}
+
+.about h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding:20px 0px;
+}
+
+.about .container{
+    height:auto;
+    background: #292929;
+    border-radius:10px;
+    padding:10px;
+}
+
+.about .container div#line{
+    height:2px;
+    background: #000;
+    margin:0px 20px;
+}
+
+.about .container #buttons {
+    margin:0px 8px;
+}
+.about .container #buttons #minimize,#color,#hide{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+}
+
+.about .container #buttons #minimize{
+    background-color: rgb(32, 193, 56);
+}
+.about .container #buttons #color{
+    background-color: rgb(249, 182, 35)
+}
+.about .container #buttons #hide{
+    background-color: rgb(234, 90, 74);
+}
+
+.about h1 button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.about h1 span#hidden_text.hidding{
+    display: none;
+}
+.about h1 span#hidden_text.showing{
+    display:inline;
+}
+
+.about .container p{
+    margin:20px;
+    font-size: 20px;
+    text-align: justify;
+    color:rgb(139, 204, 112);
+    font-family:Consolas;
+}
+
+.about .container p i{
+    font-size: 15px;
+}
