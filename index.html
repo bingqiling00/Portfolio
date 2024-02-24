@@ -11,75 +11,231 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand px-4 m-0" href="#">Logo</a>
-        <button class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarSupportedContent" 
-        aria-controls="navbarSupportedContent" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
-            <li class="nav-item px-4 py-lg-0 py-3">
-              <a class="nav-link active text-center" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item px-4 py-lg-0 py-3">
-              <a class="nav-link text-center" href="#">Project</a>
-            </li>
-            <li class="nav-item px-4 py-lg-0 py-3">
-              <a class="nav-link text-center" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="pages">
     <div class="container-fluid">
-
+      <a class="navbar-brand px-4 m-0" href="#">Logo</a>
+      <button class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+          <li class="nav-item px-4 py-lg-0 py-3">
+            <a class="nav-link active text-center" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item px-4 py-lg-0 py-3">
+            <a class="nav-link text-center" href="#project">Project</a>
+          </li>
+          <li class="nav-item px-4 py-lg-0 py-3">
+            <a class="nav-link text-center" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#pages" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="container-fluid">
       <!-- hero -->
       <div class="hero d-flex flex-column">
         <div id="bg_blur"></div>
         <div class="content">
           <h1 class="d-flex justify-content-center">
-            <span id="left" class="fw-bold">&lt</span>
-            <span id="slash" class="fw-bold">/</span>
-            <span id="cent_text" class="fw-bold"> Html </span> 
-            <span id="right" class="fw-bold">&gt</span>
+            <span id="left">&lt</span>
+            <span id="slash">/</span>
+            <span id="cent_text">HTML</span> 
+            <span id="right">&gt</span>
           </h1>
           <p class="text-center">//Turn your creativity into digital masterpieces.//</p>
         </div>
       </div>
       <!-- welcomes -->
-      <div class="about">
-        <h1>
-          <strong>Welcome, fellow web warriors</strong>
-          <button>👊</button>
-          <span id="hidden_text" class="hidding">← Try to fist bump.</span>
-        </h1>
+      <div class="welcome">
         <div class="container">
-          <div id="buttons" class="d-flex justify-content-end">
-            <div id="minimize" class="m-2"></div>
-            <div id="color" class="m-2"></div>
-            <div id="hide" class="m-2"></div>
+          <div id="title">
+            <h1>
+              <strong>Welcome, fellow web warriors</strong>
+              <button>👊</button>
+              <span id="hidden_text" class="hidding">← Try to fist bump.</span>
+            </h1>
           </div>
-          <div id="line"></div>
-          <div>
-            <p><i>/*</i><br>
-              Hello there!
-              I'm a fresh graduate with a strong passion in coding. Aspired to be a skilled and creative web developer, with dedication to build engaging and user-friendly websites. I'm ready to bring my  enthusiasm to find an oppurtunity to utilized my learned knowledge.<br><i>*/</i>
-            </p>
+          <div id="paragraph">
+            <div id="buttons" class="d-flex justify-content-end">
+              <div id="minimize" class="m-2"></div>
+              <div id="color" class="m-2"></div>
+              <div id="hide" class="m-2"></div>
+            </div>
+            <div id="line"></div>
+            <div>
+              <p><i>/*</i><br>
+                Hello there!
+                I'm a fresh graduate with a strong passion in coding. Aspired to be a skilled and creative web developer, with dedication to build engaging and user-friendly websites. I'm ready to bring my  enthusiasm to find an oppurtunity to utilized my learned knowledge.<br><i>*/</i>
+              </p>
+            </div>
           </div>
-
-
-          
         </div>
       </div>
-    </div>
+      <!-- about -->
+      <div class="about" id="about">
+        <div class="container">
+          <h1 class="d-flex justify-content-start fw-bold" id="section_about_start">
+            <span id="left" class="fw-bold">&lt</span>
+            <!-- <span id="slash" class="fw-bold">/</span> -->
+            <span id="cent_text" class="fw-bold">About</span>
+            <span id="right" class="fw-bold">&gt</span>
+          </h1>
+          <div class="d-flex flex-lg-row flex-column" id="me">
+            <div class="col-3-lg" id="left">
+              <!-- <p class="fw-bold">A<br>B<br>O<br>U<br>T<br> <br>M<br>E</p> -->
+              <h2 class="fw-bold text-lg-center text-start">ABOUT ME</h2>
+            </div>
+            <div class="col-9-lg" id="right">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+          </div>
+          <div class="d-flex flex-lg-row flex-column" id="edu">
+            <div class="col-3-lg order-lg-2" id="right">
+              <h2 class="fw-bold text-lg-center text-end">EDUCATION</h2>
+            </div>
+            <div class="col-9-lg order-lg-1" id="left">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+          </div>
+          <div class="d-flex" id="skill">
+            <div class="w-100">
+              <h2 class="fw-bold text-start pb-2">I Can Do..</h2>
+              <div class="row w-100">
+                <div class="col-lg-4 col-md-6" id="box">
+                  <div class="p-1">
+                    <div class="d-flex align-items-center pb-2"> 
+                      <img src="sc.png" alt="" width="64px" id="html">
+                      <h4 class="m-0">HTML</h4>
+                    </div>
+                    <p>Fundamental language for structuring web content, build foundation for every online experiences</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6" id="box">
+                  <div class="p-1">
+                    <div class="d-flex align-items-center pb-2">
+                      <img src="css.png" alt="" width="50px" id="css">
+                      <h4 class="m-0">CSS</h4>
+                    </div>
+                    <p>Transforming plain text into visually stunning elements and enabling responsive web design for an optimal experience across various devices</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6" id="box">
+                  <div class="p-1">
+                    <div class="d-flex align-items-center pb-2">
+                      <img src="js.png" alt="" width="46px" id="js">
+                      <h4 class="m-0">Javascript</h4>
+                    </div>
+                    <p>Enhances website functionality, provide interactive and engaging user experience through dynamic features</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6" id="box">
+                  <div class="p-1">
+                    <div class="d-flex align-items-center pb-2">
+                      <img src="bs.png" alt="" width="40px" id="bs">
+                      <h4 class="m-0">Bootstrap</h4>
+                    </div>
+                    <p>Enables dynamic website functionality, facilitating seamless data processing and personalized user experiences</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6" id="box">
+                  <div class="p-1">
+                    <div class="d-flex align-items-center pb-2">
+                      <img src="php.png" alt="" width="50px" id="php">
+                      <h4 class="m-0">PHP</h4>
+                    </div>
+                    <p>Enables dynamic website functionality, facilitating seamless data processing and personalized user experiences</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <h1 class="d-flex justify-content-end fw-bold" id="section_about_end">
+            <span id="left" class="fw-bold">&lt</span>
+            <span id="slash" class="fw-bold">/</span>
+            <span id="cent_text" class="fw-bold">About</span>
+            <span id="right" class="fw-bold">&gt</span>
+          </h1>
+        </div>
+      </div>
+      <!-- project -->
+      <div class="project" id="project">
+        <div class="container">
+          <h1 class="d-flex justify-content-start fw-bold" id="section_project_start">
+            <span id="left" class="fw-bold">&lt</span>
+            <!-- <span id="slash" class="fw-bold">/</span> -->
+            <span id="cent_text" class="fw-bold">Project</span>
+            <span id="right" class="fw-bold">&gt</span>
+          </h1>
+          <div>
+            <h2>COMING SOON...</h2>
+            <p>Exciting new projects are on the horizon! Stay tuned for updates.</p>
+          </div>
+          <h1 class="d-flex justify-content-end fw-bold" id="section_project_end">
+            <span id="left" class="fw-bold">&lt</span>
+            <span id="slash" class="fw-bold">/</span>
+            <span id="cent_text" class="fw-bold">Project</span>
+            <span id="right" class="fw-bold">&gt</span>
+          </h1>
+        </div>
+      </div>
+      <!-- contact -->
+      <div class="contact" id="contact">
+        <div class="container">
+          <div class="row d-flex justify-content-xxl-between justify-content-center">
+            <div class="col-xxl-5 text-center" id="left">
+              <div id="con_contact">
+                <h2>GET IN TOUCH</h2>
+                <p>Thank you for visiting my portfolio! If you have any questions, job opportunities, or just want to say hello, feel free to reach out.Let's get in touch and work together to achieve great things!</p>
+              </div>
+              <div id="con_loc">
+                <h4>Location</h4>
+                <p>Sungai Chua, Kajang, Selangor</p>
+              </div>
+              <div id="con_mail">
+                <h4>Email</h4>
+                <p>cyiheng.work@gmail.com</p>
+              </div>
+              <div id="con_phone">
+                <h4>Phone</h4>
+                <p>+60-173263234</p>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-8" id="right">
+              <h2 class="text-center ">CONTACT FORM</h2>
+              <div id="name">
+                <input type="text"  disabled>
+                <label>Your Name</label>
+              </div>
+              <div id="phone">
+                <input type="text"  disabled>
+                <label>Your Phone</label>
+              </div>
+              <div id="email">
+                <input type="text"  disabled>
+                <label>Your Email</label>
+              </div>
+              <div id="msg">
+                <input type="text"  disabled>
+                <label>Message</label>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button disabled>Sorry, not available yet</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
 
 </body>
 </html>

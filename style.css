@@ -1,13 +1,18 @@
 *{
     font-family: 'Poppins';
     color:rgb(255, 255, 255);
-    font-size:24px;
+    font-size:20px;
+
+    p{
+        color:#c2c2c2;
+        
+    }
 }
 
 body{
     background: #1b1b1b;
 }
-
+/* start navbar */
 nav{
     background: #1b1b1b;
 }
@@ -33,7 +38,7 @@ nav{
 .navbar-nav .nav-link{
     color:white;
 }
-
+/* end navbar */
 /* start hero */
 .hero{
     padding:250px 0px 250px 0px;
@@ -65,14 +70,20 @@ nav{
 }
 
 .hero h1 span#left,
-.hero h1 span#right
-{
+.hero h1 span#right{
     opacity: 25%;
-    
 }
 
-.hero h1 span#cent_text,span#slash,span#left,span#right{
+.hero h1 span#cent_text,
+.hero h1 span#left,
+.hero h1 span#right,
+.hero h1 span#slash{
     font-size:120px;
+}
+
+.hero h1 span#left,
+.hero h1 span#right{
+    font-family:Generalsans, sans-serif;
 }
 
 .hero h1 span#slash{
@@ -87,66 +98,74 @@ nav{
 }
 /* end hero */
 /* ------------------------------------------------------------------------------------------------------ */
-/* start about */
-.about{
+/* start welcome */
+.welcome{
     /* background: #292929; */
-    padding:20px 100px 250px 100px;
-
+    /* padding:20px 200px 250px 200px; */
+    padding:20px 0px 180px 0px;
 }
 
-.about h1{
+.welcome .container{
+    max-width:1300px;
+    
+}
+
+.welcome h1{
     font-weight: bold;
     font-size: 36px;
     padding:20px 0px;
 }
 
-.about .container{
+.welcome .container #title{
+    padding:0;
+}
+.welcome .container #paragraph{
     height:auto;
     background: #292929;
     border-radius:10px;
     padding:10px;
 }
 
-.about .container div#line{
+.welcome .container #paragraph div#line{
     height:2px;
     background: #000;
     margin:0px 20px;
 }
 
-.about .container #buttons {
+.welcome .container #paragraph #buttons {
     margin:0px 8px;
 }
-.about .container #buttons #minimize,#color,#hide{
+.welcome .container #paragraph #buttons #minimize,#color,#hide{
     width: 20px;
     height: 20px;
     border-radius: 50%; 
 }
 
-.about .container #buttons #minimize{
+.welcome .container #paragraph #buttons #minimize{
     background-color: rgb(32, 193, 56);
 }
-.about .container #buttons #color{
+.welcome .container #paragraph #buttons #color{
     background-color: rgb(249, 182, 35)
 }
-.about .container #buttons #hide{
+.welcome .container #paragraph #buttons #hide{
     background-color: rgb(234, 90, 74);
 }
 
-.about h1 button{
+.welcome h1 button{
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
 }
 
-.about h1 span#hidden_text.hidding{
+.welcome h1 span#hidden_text.hidding{
     display: none;
 }
-.about h1 span#hidden_text.showing{
+.welcome h1 span#hidden_text.showing{
     display:inline;
 }
 
-.about .container p{
+.welcome .container p{
     margin:20px;
     font-size: 20px;
     text-align: justify;
@@ -154,6 +173,263 @@ nav{
     font-family:Consolas;
 }
 
-.about .container p i{
+.welcome .container p i{
     font-size: 15px;
 }
+
+/* end welcome */
+/* ------------------------------------------------------------------------------------------------------ */
+/* start about */
+.about{
+    padding: 70px 0px 200px 0px;
+}
+
+.about .container{
+    max-width:1300px;
+}
+
+.about .container #section_about_start span{
+    padding-bottom: 80px;
+    font-size: 50px;
+}
+.about .container #section_about_end span{
+    padding-top: 80px;
+    font-size: 50px;
+}
+
+.about h1 span#left,
+.about h1 span#right,
+.about h1 span#slash{
+    opacity: 25%;
+}
+
+/* .about h1 span#slash{
+    background: linear-gradient(to left,#ffdc18, #946e0c );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+
+.about h1 span#left,
+.about h1 span#right,
+.about h1 span#cent_text{
+    font-family:Generalsans, sans-serif;
+}
+
+.about #me,
+.about #edu{
+    padding-bottom: 60px;
+}
+
+.about #me #left h2,
+.about #edu #right h2,
+.about #skill h2{
+    white-space: nowrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:900;
+    font-size:35px;
+}
+
+.about #me #right p,
+.about #edu #left p{
+    text-align: justify;
+    font-size:20px;
+}
+
+.about #me #right p{
+    padding:8px 0px 50px 40px;
+}
+.about #edu #left p{
+    padding:8px 40px 50px 0px;
+}
+
+@media (max-width: 992px){
+    .about #me #left p,
+    .about #edu #right p,
+    .about #skill h2{
+        white-space: nowrap;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight:900;
+        font-size:40px;
+    }
+    
+    .about #me #right p,
+    .about #edu #left p{
+        padding:0px;
+        text-align: justify;
+    }
+}
+/* .about #skill #box .p-1{
+    border:1px solid white;
+    border-radius:15px;
+} */
+.about #skill #box h4{
+    padding-left:5px;
+    font-size:25px;
+    font-weight:900;
+}
+.about #skill #box p{
+    text-align: justify;
+}
+
+.about #skill #box{
+    img#css{
+        margin:7px 7px;
+    }
+    img#js{
+        margin:9px 9px;
+    }
+    img#bs{
+        margin:12px 12px;
+    }
+    img#php{
+        margin:7px 7px;
+    }
+}
+
+
+/* end about */
+/* ------------------------------------------------------------------------------------------------------ */
+/* start project */
+.project{
+    padding: 70px 0px 200px 0px;
+}
+
+.project .container{
+    max-width:1300px;
+}
+
+.project .container #section_project_start span{
+    padding-bottom: 80px;
+    font-size: 50px;
+}
+
+.project .container #section_project_end span{
+    padding-top: 80px;
+    font-size: 50px;
+}
+
+.project h1 span#left,
+.project h1 span#right,
+.project h1 span#slash{
+    opacity: 25%;
+}
+
+/* .project h1 span#slash{
+    background: linear-gradient(to left,#ffdc18, #946e0c );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+} */
+
+.project h1 span#left,
+.project h1 span#right,
+.project h1 span#cent_text{
+    font-family:Generalsans, sans-serif;
+}
+/* end project */
+/* ------------------------------------------------------------------------------------------------------ */
+/* start contact */
+.contact{
+    padding: 100px 0px 200px 0px;
+}
+
+.contact .container{
+    max-width:1300px;
+}
+
+.contact .container #left h2,
+.contact .container #left h4,
+.contact .container #right h2{
+    font-weight: 700;
+}
+.contact .container .row #left #con_contact p{
+    text-align-last: center;
+    text-align: justify;
+    padding-bottom: 50px;
+}
+
+.contact .container .row #left #con_loc p,
+.contact .container .row #left #con_mail p,
+.contact .container .row #left #con_phone p{
+    padding-bottom: 30px;
+}
+
+.contact .container #left h2{
+    padding-bottom: 40px;
+}
+
+
+.contact .container #right{
+    background: #212121;
+    margin-top:-40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Adding box shadow for the floating effect */
+    padding:40px 50px;
+}
+
+@media (max-width: 1400px){
+    .contact .container #right{
+        margin-top:40px;
+        padding:40px 50px;
+    }
+
+}
+
+.contact .container #right h2{
+    padding-bottom: 50px;
+}
+
+.contact .container #right #name,
+.contact .container #right #phone,
+.contact .container #right #email,
+.contact .container #right #msg{
+    position:relative;
+    height:40px;
+    width:100%;
+    
+}
+
+.contact .container #right #name,
+.contact .container #right #phone,
+.contact .container #right #email,
+.contact .container #right #msg{
+    padding-bottom: 110px;
+    label{
+        bottom:90px;
+    }
+}
+
+.contact .container #right #name input,
+.contact .container #right #phone input,
+.contact .container #right #email input,
+.contact .container #right #msg input{
+    height:60px;
+    width:100%;
+    border:none;
+    background: none;
+    border-bottom: 2px solid #7f7f7f;
+}
+
+.contact .container #right #name label,
+.contact .container #right #phone label,
+.contact .container #right #email label,
+.contact .container #right #msg label
+{
+    position:absolute;
+     /* Adjust as needed */
+    left: 0;
+    color:#7f7f7f;
+}
+
+.contact .container #right button{
+    
+    background: #343434;
+    color:#7f7f7f;
+    padding:20px;
+    
+    flex-direction: column;
+    
+    
+}
+/* end contact */
+
