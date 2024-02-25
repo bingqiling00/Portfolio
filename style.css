@@ -1,8 +1,6 @@
 *{
     font-family: 'Poppins';
     color:rgb(255, 255, 255);
-    font-size:20px;
-
     p{
         color:#c2c2c2;
         
@@ -12,6 +10,14 @@
 body{
     background: #1b1b1b;
 }
+
+@media (min-width: 1400px){
+    .container{
+        max-width:1300px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
 /* start navbar */
 nav{
     background: #1b1b1b;
@@ -19,6 +25,10 @@ nav{
 .navbar-toggler{
     border:none !important;
     /* color:rgb(255, 255, 255) !important; */
+}
+
+nav a#logo{
+    font-size: 25px !important;
 }
 
 .navbar-toggler-icon {
@@ -39,6 +49,7 @@ nav{
     color:white;
 }
 /* end navbar */
+/* ------------------------------------------------------------------------------------------------------ */
 /* start hero */
 .hero{
     padding:250px 0px 250px 0px;
@@ -78,7 +89,7 @@ nav{
 .hero h1 span#left,
 .hero h1 span#right,
 .hero h1 span#slash{
-    font-size:120px;
+    font-size:clamp(40px,15vw,145px);
 }
 
 .hero h1 span#left,
@@ -94,7 +105,9 @@ nav{
 }
 
 .hero p{
-    color:#51a953;    font-style:italic;
+    color:#51a953;    
+    font-style:italic;
+    font-size:clamp(20px,2vw,30px);
 }
 /* end hero */
 /* ------------------------------------------------------------------------------------------------------ */
@@ -105,25 +118,34 @@ nav{
     padding:20px 0px 180px 0px;
 }
 
-.welcome .container{
-    max-width:1300px;
-    
-}
-
 .welcome h1{
     font-weight: bold;
-    font-size: 36px;
     padding:20px 0px;
+    font-size: clamp(25px,2.5vw,36px);
+    button{
+        font-size: clamp(28px,3vw,45px);
+    }
 }
 
-.welcome .container #title{
-    padding:0;
-}
 .welcome .container #paragraph{
     height:auto;
     background: #292929;
     border-radius:10px;
     padding:10px;
+
+}
+
+.welcome .container #paragraph.hidden{
+    display:none;
+}
+
+
+.welcome .container #paragraph #bottom.hidden{/* state changing show/hidden. */
+    padding-bottom:36px;
+
+    p{
+        display:none;
+    }
 }
 
 .welcome .container #paragraph div#line{
@@ -133,21 +155,23 @@ nav{
 }
 
 .welcome .container #paragraph #buttons {
-    margin:0px 8px;
+    margin:0px 10px;
 }
-.welcome .container #paragraph #buttons #minimize,#color,#hide{
+.welcome .container #paragraph #buttons #minimize_button,
+.welcome .container #paragraph #buttons #color_button,
+.welcome .container #paragraph #buttons #hide_button{
     width: 20px;
     height: 20px;
     border-radius: 50%; 
 }
 
-.welcome .container #paragraph #buttons #minimize{
+.welcome .container #paragraph #buttons #minimize_button{
     background-color: rgb(32, 193, 56);
 }
-.welcome .container #paragraph #buttons #color{
+.welcome .container #paragraph #buttons #color_button{
     background-color: rgb(249, 182, 35)
 }
-.welcome .container #paragraph #buttons #hide{
+.welcome .container #paragraph #buttons #hide_button{
     background-color: rgb(234, 90, 74);
 }
 
@@ -167,14 +191,33 @@ nav{
 
 .welcome .container p{
     margin:20px;
-    font-size: 20px;
+    font-size: clamp(15px,2vw,20px);
     text-align: justify;
     color:rgb(139, 204, 112);
     font-family:Consolas;
 }
 
-.welcome .container p i{
-    font-size: 15px;
+@keyframes minimizeAnimation {/* welcome paragraph section animation */
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes closeAnimation {/* welcome paragraph section animation */
+
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.show {
+    animation: minimizeAnimation 0.8s forwards;
 }
 
 /* end welcome */
@@ -184,17 +227,13 @@ nav{
     padding: 70px 0px 200px 0px;
 }
 
-.about .container{
-    max-width:1300px;
-}
-
 .about .container #section_about_start span{
     padding-bottom: 80px;
-    font-size: 50px;
+    font-size: 35px;
 }
 .about .container #section_about_end span{
     padding-top: 80px;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .about h1 span#left,
@@ -203,17 +242,11 @@ nav{
     opacity: 25%;
 }
 
-/* .about h1 span#slash{
-    background: linear-gradient(to left,#ffdc18, #946e0c );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-} */
-
 .about h1 span#left,
 .about h1 span#right,
 .about h1 span#cent_text{
     font-family:Generalsans, sans-serif;
+    
 }
 
 .about #me,
@@ -222,47 +255,27 @@ nav{
 }
 
 .about #me #left h2,
-.about #edu #right h2,
+.about #edu #left h2,
 .about #skill h2{
     white-space: nowrap;
     font-family: 'Courier New', Courier, monospace;
     font-weight:900;
-    font-size:35px;
+    font-size:clamp(40px,3vw,45px);
+    margin:0;
+    padding-bottom: 20px;
 }
 
 .about #me #right p,
-.about #edu #left p{
+.about #edu #right p{
     text-align: justify;
-    font-size:20px;
+    font-size:clamp(15px,2vw,20px);
 }
 
-.about #me #right p{
-    padding:8px 0px 50px 40px;
-}
-.about #edu #left p{
-    padding:8px 40px 50px 0px;
+.about #me #right p,
+.about #edu #right p{
+    padding:0px 0px 50px 0px;
 }
 
-@media (max-width: 992px){
-    .about #me #left p,
-    .about #edu #right p,
-    .about #skill h2{
-        white-space: nowrap;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight:900;
-        font-size:40px;
-    }
-    
-    .about #me #right p,
-    .about #edu #left p{
-        padding:0px;
-        text-align: justify;
-    }
-}
-/* .about #skill #box .p-1{
-    border:1px solid white;
-    border-radius:15px;
-} */
 .about #skill #box h4{
     padding-left:5px;
     font-size:25px;
@@ -270,20 +283,20 @@ nav{
 }
 .about #skill #box p{
     text-align: justify;
+    font-size:clamp(15px,2vw,20px);
 }
 
 .about #skill #box{
-    img#css{
-        margin:7px 7px;
+    img#css,
+    img#php{
+        margin:7px;
     }
     img#js{
-        margin:9px 9px;
+        margin:9px;
     }
-    img#bs{
-        margin:12px 12px;
-    }
-    img#php{
-        margin:7px 7px;
+    img#bs,
+    img#sql{
+        margin:12px;
     }
 }
 
@@ -295,18 +308,14 @@ nav{
     padding: 70px 0px 200px 0px;
 }
 
-.project .container{
-    max-width:1300px;
-}
-
 .project .container #section_project_start span{
     padding-bottom: 80px;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .project .container #section_project_end span{
     padding-top: 80px;
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .project h1 span#left,
@@ -327,6 +336,13 @@ nav{
 .project h1 span#cent_text{
     font-family:Generalsans, sans-serif;
 }
+
+.project h2{
+    font-size: 40px;
+}
+.project p{
+    font-size:clamp(15px,2vw,20px);
+}
 /* end project */
 /* ------------------------------------------------------------------------------------------------------ */
 /* start contact */
@@ -334,19 +350,21 @@ nav{
     padding: 100px 0px 200px 0px;
 }
 
-.contact .container{
-    max-width:1300px;
-}
-
 .contact .container #left h2,
 .contact .container #left h4,
 .contact .container #right h2{
     font-weight: 700;
 }
+
+.contact .container .row #left p{
+    font-size:clamp(15px,2vw,20px);
+}
+
 .contact .container .row #left #con_contact p{
     text-align-last: center;
     text-align: justify;
     padding-bottom: 50px;
+
 }
 
 .contact .container .row #left #con_loc p,

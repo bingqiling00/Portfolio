@@ -13,7 +13,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="pages">
     <div class="container-fluid">
-      <a class="navbar-brand px-4 m-0" href="#">Logo</a>
+      <a class="navbar-brand px-4 m-0" href="#" id="logo"><img src="web.png" alt="">PORTFOLIO</a>
       <button class="navbar-toggler" 
       type="button" 
       data-bs-toggle="collapse" 
@@ -58,22 +58,22 @@
         <div class="container">
           <div id="title">
             <h1>
-              <strong>Welcome, fellow web warriors</strong>
-              <button>👊</button>
-              <span id="hidden_text" class="hidding">← Try to fist bump.</span>
+              <b>Welcome, fellow web warriors</b>
+              <button id="fist_bump">👊</button>
+              <span id="hidden_text" class="hidding">← Hit me</span>
             </h1>
           </div>
-          <div id="paragraph">
+          <div id="paragraph" class="show">
             <div id="buttons" class="d-flex justify-content-end">
-              <div id="minimize" class="m-2"></div>
-              <div id="color" class="m-2"></div>
-              <div id="hide" class="m-2"></div>
+              <div id="minimize_button" class="m-2"></div>
+              <div id="color_button" class="m-2"></div>
+              <div id="hide_button" class="m-2"></div>
             </div>
             <div id="line"></div>
-            <div>
-              <p><i>/*</i><br>
+            <div id="bottom" class="show">
+              <p>/*<br>
                 Hello there!
-                I'm a fresh graduate with a strong passion in coding. Aspired to be a skilled and creative web developer, with dedication to build engaging and user-friendly websites. I'm ready to bring my  enthusiasm to find an oppurtunity to utilized my learned knowledge.<br><i>*/</i>
+                I'm a fresh graduate with a strong passion in coding. Aspired to be a skilled and creative web developer, with dedication to build engaging and user-friendly websites. I'm ready to bring my  enthusiasm to find an oppurtunity to utilized my learned knowledge.<br>*/
               </p>
             </div>
           </div>
@@ -89,64 +89,72 @@
             <span id="right" class="fw-bold">&gt</span>
           </h1>
           <div class="d-flex flex-lg-row flex-column" id="me">
-            <div class="col-3-lg" id="left">
-              <!-- <p class="fw-bold">A<br>B<br>O<br>U<br>T<br> <br>M<br>E</p> -->
-              <h2 class="fw-bold text-lg-center text-start">ABOUT ME</h2>
+            <div class="col-lg-3" id="left">
+              <h2 class="fw-bold text-start">ABOUT ME</h2>
             </div>
-            <div class="col-9-lg" id="right">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="col-lg-9" id="right">
+              <p>Hi there, I'm <b>Chin Yi Heng</b>, a recent graduate who aspires to become a <b>skilled and proficient web developer</b>. My interest in developing web content was sparked during my <b>first attempt</b> at designing and creating <b>a web project focused on building an e-commerce website</b>. Through this experience, I discovered my passion for developing creative and innovative web content. Now, I'm eager to launch my career journey and contribute my skills and enthusiasm to any job opportunity where I can apply my expertise and develop creative and user-friendly websites.</p>
             </div>
           </div>
           <div class="d-flex flex-lg-row flex-column" id="edu">
-            <div class="col-3-lg order-lg-2" id="right">
-              <h2 class="fw-bold text-lg-center text-end">EDUCATION</h2>
+            <div class="col-lg-3" id="left">
+              <h2 class="fw-bold text-start">EDUCATION</h2>
             </div>
-            <div class="col-9-lg order-lg-1" id="left">
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="col-lg-9" id="right">
+              <p>Recently, I have completed my studied in University Tunku Abdul Rahman, where I earned my Bachelor of Science (Honours) Applied Mathematics with Computing which also where I developed a solid foundation in developing web content. Aside from the programming language, my mathematic background has also equipped me with an ability to solve complex problem in programmings and understand logics behind the codes.</p>
             </div>
           </div>
           <div class="d-flex" id="skill">
             <div class="w-100">
-              <h2 class="fw-bold text-start pb-2">I Can Do..</h2>
-              <div class="row w-100">
-                <div class="col-lg-4 col-md-6" id="box">
-                  <div class="p-1">
+              <h2 class="fw-bold text-start">I Can Do..</h2>
+              <div class="row">
+                <div class="col-sm-6 mb-4 pe-sm-4 pe-xl-5" id="box">
+                  <div class="">
                     <div class="d-flex align-items-center pb-2"> 
                       <img src="sc.png" alt="" width="64px" id="html">
                       <h4 class="m-0">HTML</h4>
                     </div>
-                    <p>Fundamental language for structuring web content, build foundation for every online experiences</p>
+                    <p>Fundamental language for structuring web content, build foundation for every online experiences.</p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6" id="box">
-                  <div class="p-1">
+                <div class="col-sm-6 mb-4 ps-sm-4 ps-xl-5" id="box">
+                  <div class="">
                     <div class="d-flex align-items-center pb-2">
                       <img src="css.png" alt="" width="50px" id="css">
                       <h4 class="m-0">CSS</h4>
                     </div>
-                    <p>Transforming plain text into visually stunning elements and enabling responsive web design for an optimal experience across various devices</p>
+                    <p>Transforming plain text into visually stunning elements and enabling responsive web design for an optimal experience across various devices.</p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6" id="box">
-                  <div class="p-1">
+                <div class="col-sm-6 mb-4 pe-sm-4 pe-xl-5" id="box">
+                  <div class="">
                     <div class="d-flex align-items-center pb-2">
                       <img src="js.png" alt="" width="46px" id="js">
                       <h4 class="m-0">Javascript</h4>
                     </div>
-                    <p>Enhances website functionality, provide interactive and engaging user experience through dynamic features</p>
+                    <p>Enhances website functionality, provide interactive and engaging user experience through dynamic features.</p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6" id="box">
-                  <div class="p-1">
+                <div class="col-sm-6 mb-4 ps-sm-4 ps-xl-5" id="box">
+                  <div class="">
                     <div class="d-flex align-items-center pb-2">
                       <img src="bs.png" alt="" width="40px" id="bs">
                       <h4 class="m-0">Bootstrap</h4>
                     </div>
-                    <p>Enables dynamic website functionality, facilitating seamless data processing and personalized user experiences</p>
+                    <p>A collection of powerful feature-packed frontend toolkit, simplifying the development of responsive websites.</p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6" id="box">
-                  <div class="p-1">
+                <div class="col-sm-6 mb-4 pe-sm-4 pe-xl-5" id="box">
+                  <div class="">
+                    <div class="d-flex align-items-center pb-2">
+                      <img src="sql.png" alt="" width="40px" id="sql">
+                      <h4 class="m-0">SQL</h4>
+                    </div>
+                    <p>Establish connection between web applications and data storage system, serves as a fundamental tool for building data-driven web applications.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 mb-4 ps-sm-4 ps-xl-5" id="box">
+                  <div class="">
                     <div class="d-flex align-items-center pb-2">
                       <img src="php.png" alt="" width="50px" id="php">
                       <h4 class="m-0">PHP</h4>
@@ -191,7 +199,7 @@
       <div class="contact" id="contact">
         <div class="container">
           <div class="row d-flex justify-content-xxl-between justify-content-center">
-            <div class="col-xxl-5 text-center" id="left">
+            <div class="col-xxl-5 col-sm-10 col-12 text-center" id="left">
               <div id="con_contact">
                 <h2>GET IN TOUCH</h2>
                 <p>Thank you for visiting my portfolio! If you have any questions, job opportunities, or just want to say hello, feel free to reach out.Let's get in touch and work together to achieve great things!</p>
@@ -209,7 +217,7 @@
                 <p>+60-173263234</p>
               </div>
             </div>
-            <div class="col-xxl-6 col-8" id="right">
+            <div class="col-xxl-6 col-lg-8 col-md-10" id="right">
               <h2 class="text-center ">CONTACT FORM</h2>
               <div id="name">
                 <input type="text"  disabled>
@@ -236,6 +244,6 @@
       </div>
   </div>
   </div>
-
+  <script src="main.js"></script>
 </body>
 </html>
