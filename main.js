@@ -66,7 +66,7 @@
         }
     }
 
-    const copy_email_button = document.getElementById("copy_email"); 
+    const copy_email_button = document.getElementById("copy_mail"); 
 
     copy_email_button.onclick = function(){
         navigator.clipboard.writeText("cyiheng.work@gmail.com");
@@ -77,4 +77,7 @@
         navigator.clipboard.writeText("60173263234");
     }
 
+    function download(){
+        console.log("asd")
+    }
 })();

@@ -508,11 +508,32 @@ h3 {
     position: relative;
 }
 
-img#copy_phone,
-img#copy_email {
+svg{
     position: absolute;
     right: -40px;
-    top:5px;
+    top:0px;
 }
+
+#con_resume{
+    button{
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+
+svg:hover{
+    .copy{
+        fill: white;
+
+    }
+    #download{
+        stroke: white;
+    }
+}
+
 /* end contact */
 
