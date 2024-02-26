@@ -1,21 +1,14 @@
 (function(){
 
 
-    function clog(text){
-        console.log(text);
-    }
-
-
-
-
-
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
     const welcome_section = document.querySelector('.welcome'); 
     const welcome_section_hidden_text = welcome_section.querySelector('#hidden_text');
     const welcome_section_paragraph = welcome_section.querySelector('#paragraph');
     const welcome_section_paragraph_bottom = welcome_section.querySelector('#bottom');
     const paragraphElement = welcome_section_paragraph_bottom.querySelector('p');
-
 
     //Minimize button
     const minimizeButton = document.getElementById("minimize_button"); 
@@ -72,4 +65,16 @@
             welcome_section_hidden_text.classList.add('hidding');
         }
     }
+
+    const copy_email_button = document.getElementById("copy_email"); 
+
+    copy_email_button.onclick = function(){
+        navigator.clipboard.writeText("cyiheng.work@gmail.com");
+    }
+    const copy_phone_button = document.getElementById("copy_phone"); 
+
+    copy_phone_button.onclick = function(){
+        navigator.clipboard.writeText("60173263234");
+    }
+
 })();

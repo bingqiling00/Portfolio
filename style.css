@@ -3,7 +3,6 @@
     color:rgb(255, 255, 255);
     p{
         color:#c2c2c2;
-        
     }
 }
 
@@ -16,6 +15,48 @@ body{
         max-width:1300px;
     }
 }
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+footer{
+    background: black;
+    .container a#logo{
+        font-size: 25px;
+    }
+    a#git_link,
+    a#ref_link,
+    a#link_ref
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+    a#git_link:hover,
+    a#ref_link:hover,
+    a#link_ref:hover{
+            color:#FFFFFF;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------------ */
 /* start navbar */
@@ -89,7 +130,7 @@ nav a#logo{
 .hero h1 span#left,
 .hero h1 span#right,
 .hero h1 span#slash{
-    font-size:clamp(40px,15vw,145px);
+    font-size:clamp(40px,15vw,135px);
 }
 
 .hero h1 span#left,
@@ -98,7 +139,7 @@ nav a#logo{
 }
 
 .hero h1 span#slash{
-    background: linear-gradient(to left,#ffd900, #664b08 );
+    background: linear-gradient(to left,#ffd900, #664b08);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -107,7 +148,7 @@ nav a#logo{
 .hero p{
     color:#51a953;    
     font-style:italic;
-    font-size:clamp(20px,2vw,30px);
+    font-size:clamp(20px,2vw,25px);
 }
 /* end hero */
 /* ------------------------------------------------------------------------------------------------------ */
@@ -121,9 +162,9 @@ nav a#logo{
 .welcome h1{
     font-weight: bold;
     padding:20px 0px;
-    font-size: clamp(25px,2.5vw,36px);
+    font-size: clamp(23px,2.5vw,28px);
     button{
-        font-size: clamp(28px,3vw,45px);
+        font-size: clamp(28px,3vw,40px);
     }
 }
 
@@ -137,6 +178,7 @@ nav a#logo{
 
 .welcome .container #paragraph.hidden{
     display:none;
+    visibility:hidden;
 }
 
 
@@ -145,6 +187,7 @@ nav a#logo{
 
     p{
         display:none;
+        visibility:hidden;
     }
 }
 
@@ -351,11 +394,19 @@ nav a#logo{
 }
 
 .contact .container #left h2,
-.contact .container #left h4,
+.contact .container #left h3,
 .contact .container #right h2{
     font-weight: 700;
 }
 
+.contact .container #left h2,
+.contact .container #right h2{
+    font-size: 32px;
+}
+
+.contact .container #left h3{
+    font-size: 28px;
+}
 .contact .container .row #left p{
     font-size:clamp(15px,2vw,20px);
 }
@@ -447,7 +498,21 @@ nav a#logo{
     
     flex-direction: column;
     
-    
+}
+#con_mail{
+    text-align: center;
+}
+
+h3 {
+    display: inline-block;
+    position: relative;
+}
+
+img#copy_phone,
+img#copy_email {
+    position: absolute;
+    right: -40px;
+    top:5px;
 }
 /* end contact */
 
