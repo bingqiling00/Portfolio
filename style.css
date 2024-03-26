@@ -162,7 +162,7 @@ nav a#logo{
 .welcome h1{
     font-weight: bold;
     padding:20px 0px;
-    font-size: clamp(23px,2.5vw,28px);
+    font-size: clamp(20px,2.5vw,28px);
     button{
         font-size: clamp(28px,3vw,40px);
     }
@@ -234,7 +234,7 @@ nav a#logo{
 
 .welcome .container p{
     margin:20px;
-    font-size: clamp(15px,2vw,20px);
+    font-size: clamp(13px,2vw,20px);
     text-align: justify;
     color:rgb(139, 204, 112);
     font-family:Consolas;
@@ -272,11 +272,11 @@ nav a#logo{
 
 .about .container #section_about_start span{
     padding-bottom: 80px;
-    font-size: 35px;
+    font-size: clamp(15px,2rem,35px);
 }
 .about .container #section_about_end span{
     padding-top: 80px;
-    font-size: 35px;
+    font-size: clamp(15px,2rem,35px);
 }
 
 .about h1 span#left,
@@ -289,7 +289,6 @@ nav a#logo{
 .about h1 span#right,
 .about h1 span#cent_text{
     font-family:Generalsans, sans-serif;
-    
 }
 
 .about #me,
@@ -303,7 +302,7 @@ nav a#logo{
     white-space: nowrap;
     font-family: 'Courier New', Courier, monospace;
     font-weight:900;
-    font-size:clamp(40px,3vw,45px);
+    font-size:clamp(28px,2.7vw,40px);
     margin:0;
     padding-bottom: 20px;
 }
@@ -311,7 +310,7 @@ nav a#logo{
 .about #me #right p,
 .about #edu #right p{
     text-align: justify;
-    font-size:clamp(15px,2vw,20px);
+    font-size:clamp(12px,2vw,15px);
 }
 
 .about #me #right p,
@@ -321,12 +320,12 @@ nav a#logo{
 
 .about #skill #box h4{
     padding-left:5px;
-    font-size:25px;
+    font-size:20px;
     font-weight:900;
 }
 .about #skill #box p{
     text-align: justify;
-    font-size:clamp(15px,2vw,20px);
+    font-size:clamp(12px,2vw,15px);
 }
 
 .about #skill #box{
@@ -353,12 +352,12 @@ nav a#logo{
 
 .project .container #section_project_start span{
     padding-bottom: 80px;
-    font-size: 35px;
+    font-size: clamp(15px,2rem,35px);
 }
 
 .project .container #section_project_end span{
     padding-top: 80px;
-    font-size: 35px;
+    font-size: clamp(15px,2rem,35px);
 }
 
 .project h1 span#left,
@@ -384,7 +383,116 @@ nav a#logo{
     font-size: 40px;
 }
 .project p{
-    font-size:clamp(15px,2vw,20px);
+    font-size:clamp(12px,2vw,15px);
+}
+
+.project .container .project_ecom_container img{
+    width:400px;
+}
+@media (max-width: 992px){
+    .project .container .project_ecom_container img{
+        width:100%;
+    }
+}
+.project .container p.future_work{
+    text-align: center;
+    padding:150px 0px 0px 0px;
+}
+
+.accordion-button:not(.collapsed){
+    background: none;
+}
+.accordion-button.collapsed{
+    background: none;
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:focus {
+    box-shadow: none;    
+    border:none;
+}
+.accordion-button:not(.collapsed){
+    box-shadow:none;
+}
+
+.featureContainer{
+    border-bottom:1px solid #c2c2c2;
+}
+.featureContainer:nth-child(4){
+    border-bottom:none;
+}
+
+@media (min-width: 1400px){
+    .project .accordianBodyImageContainer{
+        width:30%;
+        img{
+            padding:10px;
+        }
+    }
+}
+@media (min-width: 992px){
+    .project .accordianBodyImageContainer{
+        width:40%;
+        img{
+            padding:30px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .project .accordianBodyImageContainer{
+        img{
+            width:70%;
+            padding:5%;
+        }
+    }
+}
+@media (max-width: 576px){
+    .project .accordianBodyImageContainer{
+        img{
+            width:70%;
+        }
+    }
+}
+@media (min-width: 992px){
+    .project .accordianBodyTextContainer{
+        width:60%;
+        padding:10px;
+    }
+}
+@media (max-width: 992px){
+    .project .accordianBodyTextContainer{
+        padding:10px;
+    }
+}
+
+
+
+.accordianBodyTextContainer p{
+    text-align: justify;
+}
+
+@media (max-width: 400px){
+    #collapseTwo .accordion-body {
+        img{
+            align-items: center;
+            width:100%;
+            max-width:400px;
+        }
+    }
+}
+@media (min-width: 400px){
+    #collapseTwo .accordion-body {
+
+        img{
+            padding:20px;
+            align-items: center;
+            width:100%;
+            max-width:400px;
+        }
+    }
 }
 /* end project */
 /* ------------------------------------------------------------------------------------------------------ */

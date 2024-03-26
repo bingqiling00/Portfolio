@@ -13,7 +13,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="pages">
     <div class="container-fluid">
-      <a class="navbar-brand m-0 ps-1" href="#" id="logo"><img src="web.png" alt=""> PORTFOLIO</a>
+      <a class="navbar-brand m-0 ps-1" href="#" id="logo"><img src="images/web.png" alt=""> PORTFOLIO</a>
       <button class="navbar-toggler" 
       type="button" 
       data-bs-toggle="collapse" 
@@ -116,7 +116,7 @@
                 <div class="col-sm-6 mb-4 pe-sm-4 pe-xl-5" id="box">
                   <div class="">
                     <div class="d-flex align-items-center pb-2"> 
-                      <img src="sc.png" alt="" width="64px" id="html">
+                      <img src="images/sc.png" alt="" width="64px" id="html">
                       <h4 class="m-0">HTML</h4>
                     </div>
                     <p>Fundamental language for structuring web content, build foundation for every online experiences.</p>
@@ -126,7 +126,7 @@
                 <div class="col-sm-6 mb-4 ps-sm-4 ps-xl-5" id="box">
                   <div class="">
                     <div class="d-flex align-items-center pb-2">
-                      <img src="css.png" alt="" width="50px" id="css">
+                      <img src="images/css.png" alt="" width="50px" id="css">
                       <h4 class="m-0">CSS</h4>
                     </div>
                     <p>Transforming plain text into visually stunning elements and enabling responsive web design for an optimal experience across various devices.</p>
@@ -136,7 +136,7 @@
                 <div class="col-sm-6 mb-4 pe-sm-4 pe-xl-5" id="box">
                   <div class="">
                     <div class="d-flex align-items-center pb-2">
-                      <img src="js.png" alt="" width="46px" id="js">
+                      <img src="images/js.png" alt="" width="46px" id="js">
                       <h4 class="m-0">Javascript</h4>
                     </div>
                     <p>Enhances website functionality, provide interactive and engaging user experience through dynamic features.</p>
@@ -146,7 +146,7 @@
                 <div class="col-sm-6 mb-4 ps-sm-4 ps-xl-5" id="box">
                   <div class="">
                     <div class="d-flex align-items-center pb-2">
-                      <img src="bs.png" alt="" width="40px" id="bs">
+                      <img src="images/bs.png" alt="" width="40px" id="bs">
                       <h4 class="m-0">Bootstrap</h4>
                     </div>
                     <p>A collection of powerful feature-packed frontend toolkit, simplifying the development of responsive websites.</p>
@@ -156,7 +156,7 @@
                 <div class="col-sm-6 mb-4 pe-sm-4 pe-xl-5" id="box">
                   <div class="">
                     <div class="d-flex align-items-center pb-2">
-                      <img src="sql.png" alt="" width="40px" id="sql">
+                      <img src="images/sql.png" alt="" width="40px" id="sql">
                       <h4 class="m-0">SQL</h4>
                     </div>
                     <p>Establish connection between web applications and data storage system, serves as a fundamental tool for building data-driven web applications.</p>
@@ -166,7 +166,7 @@
                 <div class="col-sm-6 mb-4 ps-sm-4 ps-xl-5" id="box">
                   <div class="">
                     <div class="d-flex align-items-center pb-2">
-                      <img src="php.png" alt="" width="50px" id="php">
+                      <img src="images/php.png" alt="" width="50px" id="php">
                       <h4 class="m-0">PHP</h4>
                     </div>
                     <p>Enables dynamic website functionality, facilitating seamless data processing and personalized user experiences.</p>
@@ -192,8 +192,111 @@
             <span id="right" class="fw-bold">&gt</span>
           </h1>
           <div>
-            <h2>COMING SOON...</h2>
-            <p>Exciting new projects are on the horizon! Stay tuned for updates.</p>
+            <!-- <h2>COMING SOON...</h2> -->
+            <div class="project_ecom_container d-flex justify-content-evenly flex-column flex-lg-row pb-5">
+              <img src="images/EcommerceWebsiteScreenshot.png" width="300px;" alt="">
+              <div class="ecom_title py-4 py-lg-0 text-center text-lg-start d-lg-flex flex-lg-column justify-content-lg-center">
+                <h2 class=" text-center">E-commerce website store</h2>
+                <p  class=" text-center py-lg-3">Built with HTML, CSS, Javascript and PHP</p>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <!-- Highlighted features accordion -->
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4>Highlighted Features</h4>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="featureContainer d-lg-flex">
+                      <div class="accordianBodyImageContainer d-flex justify-content-center">
+                        <img src="images/EcommerceUserAuthentication.png" alt="" width="100%">
+                      </div>
+                      <div class="accordianBodyTextContainer d-flex flex-column justify-content-center px-lg-5">
+                        <h5 class="text-center pb-lg-2 pt-3 pt-lg-0">User authentication</h5>
+                        <p class="px-0 px-md-5">Basic user authentication function to register user account or sign in to existing account. Additionally, AJAX solution were implemented to handle username availability checking before submitting the registration form.</p>
+                      </div>
+                    </div>
+                    <div class="featureContainer d-lg-flex">
+                      <div class="accordianBodyImageContainer d-flex justify-content-center order-lg-2">
+                        <img src="images/EcommerceCRUD.png" alt="" width="100%">
+                      </div>
+                      <div class="accordianBodyTextContainer d-flex flex-column justify-content-center px-lg-5 order-lg-1">
+                        <h5 class="text-center pb-lg-2 pt-3 pt-lg-0">Admin CRUD</h5>
+                        <p class="px-0 px-md-5">Customized product page for adminstrators to handle CRUD operations without implementing any database language statements.</p>
+                      </div>
+                    </div>
+                    <div class="featureContainer d-lg-flex">
+                      <div class="accordianBodyImageContainer d-flex justify-content-center">
+                        <img src="images/EcommerceSearch.png" alt="" width="100%">
+                      </div>
+                      <div class="accordianBodyTextContainer d-flex flex-column justify-content-center px-lg-5">
+                        <h5 class="text-center pb-lg-2 pt-3 pt-lg-0">Product search bar</h5>
+                        <p class="px-0 px-md-5">Classic search bar allows user to search for products through the website. Furthur enhance functionality by implementing jQuery <code>.autocomplete</code> function to filter and narrow down searching area.</p>
+                      </div>
+                    </div>
+                    <div class="featureContainer d-lg-flex">
+                      <div class="accordianBodyImageContainer d-flex justify-content-center order-lg-2">
+                        <img src="images/EcommerceUserCart.png" alt="" width="100%">
+                      </div>
+                      <div class="accordianBodyTextContainer d-flex flex-column justify-content-center px-lg-5 order-lg-1">
+                        <h5 class="text-center pb-lg-2 pt-3 pt-lg-0">Customers cart</h5>
+                        <p class="px-0 px-md-5">One of the essential component of e-commerce store function as gather and manage products user wish to purchase. Allow user to track and review their cart before proceeding to checkout.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Data Handling accordion -->
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h4>Data Handling</h4>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body d-flex align-items-center flex-column">
+                    <p>Behind the website, the data processing and handling processes are driven by SQL statements and facilitated through <strong>PHPMyAdmin</strong>. The CRUD operations that will be perform by Admins will be done through prepared SQL statement in order to update new records to database. The are store in four table that can be illustrated through ERD diagram below:</p>
+                    <img src="images/ERD.png" alt="" width="500px">
+                    <p>To ensure data integrity, <strong>Primary key</strong> and <strong>Foreign key</strong> are set up to uniquely identify each records and establish relationship between one column to another table's column.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Security accordion -->
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h4>Security</h4>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse bg-transparent" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>In this website, a few security measures were implemented to defend some common attacks from user actions to website. Each user inputs will be sanitized using PHP function such as <code>htmlspecialchars()</code> and <code>stripslashes()</code>. Apart from that, the SQL statement and queries will be prepared and parameterized to ensure only valid user inputs can be processed.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technology stack accordion -->
+              <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h4>Technology Stack</h4>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse bg-transparent" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>HTML - </strong>A markup language to structure and display contents range from images, texts, tables, forms, and interactive elements.<br><br>
+                    <strong>CSS - </strong>Customizing the format and style for elements in HTML to improves visuability.<br><br>
+                    <strong>PHP - </strong>Server-side scripting used to create backend function such as SQL queries, session management and form handling.<br><br>
+                    <strong>Javascript - </strong>Client-side scripting to create dynamic and interactive website in real-time based on user action.<br><br>
+                    <strong>jQuery - </strong>A javascript framework that simplifying javascript scripts ranging from event handling to responses handling.<br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="future_work">Exciting new projects are on the horizon! Stay tuned for updates.</p>
           </div>
           <h1 class="d-flex justify-content-end fw-bold" id="section_project_end">
             <span id="left" class="fw-bold">&lt</span>
@@ -283,15 +386,15 @@
         <div class="row">
           <div class="col-xl-6 col-lg-7 pb-xl-0 pb-5">
             <div class="d-flex align-items-center pb-3">
-              <img src="web.png" alt=""><a class="navbar-brand m-0 ps-1" href="#" id="logo"> PORTFOLIO</a>
+              <img src="images/web.png" alt=""><a class="navbar-brand m-0 ps-1" href="#" id="logo"> PORTFOLIO</a>
             </div>
-            <p>Designed and built by Yi Heng (<a href="https://github.com/bingqiling00" target="_blank" rel="noopener noreferrer" id="git_link">bingqiling00</a><img src="git.png" class="pb-1" alt="" width="25px" id="git">). <br>
+            <p>Designed and built by Yi Heng (<a href="https://github.com/bingqiling00" target="_blank" rel="noopener noreferrer" id="git_link">bingqiling00</a><img src="images/git.png" class="pb-1" alt="" width="25px" id="git">). <br>
               Special thanks to <a href="https://az-austin.webflow.io/" target="_blank" rel="noopener noreferrer" id="ref_link">Austin.dev</a> for inspiration and ideas.</p>
             <div>Powered by: 
-              <img src="html.png" alt="Html" width="30px" data-bs-toggle="tooltip" data-bs-title="Html">
-              <img src="css2.png" alt="Css" width="37px" data-bs-toggle="tooltip" data-bs-title="Css">
-              <img src="js.png" alt="Javascript" width="30px" data-bs-toggle="tooltip" data-bs-title="Javascript">
-              <img src="bs.png" alt="Bootstrap" width="26px" data-bs-toggle="tooltip" data-bs-title="Bootstrap">
+              <img src="images/html.png" alt="Html" width="30px" data-bs-toggle="tooltip" data-bs-title="Html">
+              <img src="images/css2.png" alt="Css" width="37px" data-bs-toggle="tooltip" data-bs-title="Css">
+              <img src="images/js.png" alt="Javascript" width="30px" data-bs-toggle="tooltip" data-bs-title="Javascript">
+              <img src="images/bs.png" alt="Bootstrap" width="26px" data-bs-toggle="tooltip" data-bs-title="Bootstrap">
             </div>
           </div>
           <div class="col-xl-6 col-lg-5">
